@@ -1,0 +1,71 @@
+@import "nullstyle.scss";
+$grey: #6F6F64;
+
+.menu {
+    .container {
+        max-width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .wrapper-menu {
+        display: flex;
+        background-color: #E9E9E3;
+        padding: 120px 56px;
+    }
+
+    .menu-title {
+        font-family: 'Azeret Mono';
+        font-weight: 700;
+        font-size: 18px;
+        color: $grey;
+    }
+    .menu-text {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 45px;
+        max-width: 558px;
+        color: $grey;
+        margin-bottom: 74px;
+    }
+    .btn {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: $grey;
+        background: #E9E9E3;
+        padding: 17px 219px;
+        border: 2px solid $grey;
+        border-radius: 0px;
+        margin-bottom: 12px;
+        width: 531px;
+        white-space: nowrap;
+        transition: all .3s;
+        &:hover {
+            background: $grey;
+            border: 2px solid $grey;
+            border-radius: 0px;
+            color: #fff;
+            transition: all .3s;
+        }
+        &.active {
+            background: $grey;
+            border: 2px solid $grey;
+            border-radius: 0px;
+            color: #fff;
+        }
+    }
+    .menu-gallery {
+        img {
+            display: none;
+        }
+
+        .menu-img.active {
+            display: block;
+        }
+    }
+}
+
+
